@@ -20,13 +20,13 @@ public class DecodeTest {
 
 
     @Test
-    public void setKey() {
+    public void setKey_getCorrectKey_int() {
         Decode.setKey(20);
         assertEquals(20, Decode.getKey());
     }
 
     @Test
-    public void setSentence() {
+    public void setSentence_getCorrectSentence_String() {
         Decode.setSentence("Hello");
         assertEquals("Hello", Decode.getSentence());
     }

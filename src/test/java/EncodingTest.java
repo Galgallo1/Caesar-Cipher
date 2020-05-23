@@ -21,13 +21,13 @@ public class EncodingTest {
 
 
     @Test
-    public void setKey() {
+    public void setKey_getCorrectKey_int() {
         Encoding.setKey(20);
         assertEquals(20, Encoding.getKey());
     }
 
     @Test
-    public void setSentence() {
+    public void setSentence_getCorrectSentence_String() {
         Encoding.setSentence("Hello");
         assertEquals("Hello", Encoding.getSentence());
     }
