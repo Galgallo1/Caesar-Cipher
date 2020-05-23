@@ -27,7 +27,7 @@ public class DecodeTest {
 
     @Test
     public void setSentence() {
-        Encoding.setSentence("Hello");
-        assertEquals("Hello", Encoding.getSentence());
+        Decode.setSentence("Hello");
+        assertEquals("Hello", Decode.getSentence());
     }
 }
