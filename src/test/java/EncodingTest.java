@@ -28,6 +28,7 @@ public class EncodingTest {
 
     @Test
     public void setSentence() {
-
+        Encoding.setSentence("Hello");
+        assertEquals("Hello", Encoding.getSentence());
     }
 }
