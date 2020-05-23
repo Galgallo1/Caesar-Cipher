@@ -1,6 +1,6 @@
 public class Encoding {
 
-    private static int key;
+    private static  int key;
     private static String sentence;
 
 
@@ -17,12 +17,12 @@ public class Encoding {
         return sentence;
     }
 
-    public void setKey(int key){
-        this.key = key;
+    public static void setKey(int key){
+        Encoding.key = key;
     }
 
-    public void setSentence(String sentence){
-        this.sentence= sentence;
+    public static void setSentence(String sentence){
+        Encoding.sentence = sentence;
     }
 
 }

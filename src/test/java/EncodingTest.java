@@ -21,18 +21,13 @@ public class EncodingTest {
 
 
     @Test
-    public void testGetKey() {
-    }
-
-    @Test
-    public void testGetSentence() {
-    }
-
-    @Test
     public void setKey() {
+        Encoding.setKey(20);
+        assertEquals(20, Encoding.getKey());
     }
 
     @Test
     public void setSentence() {
+
     }
 }
