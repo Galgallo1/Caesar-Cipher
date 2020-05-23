@@ -21,8 +21,8 @@ public class DecodeTest {
 
     @Test
     public void setKey() {
-        Encoding.setKey(20);
-        assertEquals(20, Encoding.getKey());
+        Decode.setKey(20);
+        assertEquals(20, Decode.getKey());
     }
 
     @Test
