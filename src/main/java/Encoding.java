@@ -1,8 +1,8 @@
 public class Encoding {
 
     private static int key;
+    private static String sentence;
 
-    private String sentence;
 
     public Encoding (int key, String sentence){
         this.key = key;
@@ -13,7 +13,7 @@ public class Encoding {
         return key;
     }
 
-    public String getSentence(){
+    public static String getSentence(){
         return sentence;
     }
 

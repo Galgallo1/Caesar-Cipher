@@ -15,7 +15,8 @@ public class EncodingTest {
     @Test
     public void getSentence_getCorrectSentence_String() {
         Encoding test = new Encoding(1, "Hello");
-
+        String expectedOutput = "Hello";
+        assertEquals(expectedOutput,Encoding.getSentence());
     }
 
 
