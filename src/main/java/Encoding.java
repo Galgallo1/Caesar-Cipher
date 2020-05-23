@@ -1,6 +1,7 @@
 public class Encoding {
 
-    private int key;
+    private static int key;
+
     private String sentence;
 
     public Encoding (int key, String sentence){
@@ -8,12 +9,12 @@ public class Encoding {
         this.sentence = sentence;
     }
 
-    public int getKey(){
-        return this.key;
+    public static int getKey(){
+        return key;
     }
 
     public String getSentence(){
-        return this.sentence;
+        return sentence;
     }
 
     public void setKey(int key){

@@ -5,16 +5,19 @@ import static org.junit.Assert.*;
 public class EncodingTest {
 
     @Test
-    public void getKey() {
+    public void getKey_getCorrectKey_int() {
         Encoding test = new Encoding(1, "Hi");
-        int expectedInt = 2;
+        int expectedInt = 1;
         assertEquals(expectedInt, Encoding.getKey());
 
     }
 
     @Test
-    public void getSentence() {
+    public void getSentence_getCorrectSentence_String() {
+        Encoding test = new Encoding(1, "Hello");
+
     }
+
 
     @Test
     public void testGetKey() {
