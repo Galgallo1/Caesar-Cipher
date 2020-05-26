@@ -31,4 +31,11 @@ public class EncodingTest {
         Encoding.setSentence("Hello");
         assertEquals("Hello", Encoding.getSentence());
     }
+
+    @Test
+    public void encrypt_encodeStringProvide_String(){
+        Encoding encode = new Encoding(23, "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG");
+        String expectedOutput = "QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD";
+        assertEquals(expectedOutput,encode.encrypt());
+    }
 }
