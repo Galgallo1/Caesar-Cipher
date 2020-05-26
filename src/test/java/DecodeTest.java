@@ -30,4 +30,11 @@ public class DecodeTest {
         Decode.setSentence("Hello");
         assertEquals("Hello", Decode.getSentence());
     }
+
+    @Test
+    public void test_decrypt_decryptString_string(){
+        Decode decode = new Decode(23,"QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD");
+        String expectedOuput = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
+        assertEquals(expectedOuput,decode.decrypt());
+    }
 }
