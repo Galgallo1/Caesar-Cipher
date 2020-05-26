@@ -4,8 +4,8 @@ public class Decode {
 
 
     public Decode (int key, String sentence){
-        this.key = key;
-        this.sentence = sentence;
+        Decode.key = key;
+        Decode.sentence = sentence;
     }
 
     public static int getKey(){
@@ -22,6 +22,23 @@ public class Decode {
 
     public static void setSentence(String sentence){
         Decode.sentence = sentence;
+    }
+
+    public String decrypt() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < sentence.length(); i++) {
+            int ch = sentence.charAt(i);
+            if (Character.isUpperCase(ch)) {
+                ch -= key % 26;
+                if (ch < 'A') ch += 26;
+            } else if (Character.isLowerCase(ch)) {
+                ch -= key % 26;
+                if (ch < 'a') ch += 26;
+            }
+            sb.append((char) ch);
+        }
+        return sb.toString();
+
     }
 
 }
