@@ -15,7 +15,7 @@ public class App {
                 Scanner key = new Scanner(System.in);
                 int keyValue = Integer.parseInt(key.next());
                 Encoding encoding = new Encoding(keyValue, encryptText);
-                System.out.println(encoding);
+                System.out.println(encoding.encrypt());
             }else if (userInput.equals("dt")) {
                 Scanner decrypt = new Scanner(System.in);
                 System.out.println("Enter a text to be decrypted");
@@ -24,7 +24,7 @@ public class App {
                 Scanner key1 = new Scanner(System.in);
                 int keyValue1 = Integer.parseInt(key1.next());
                 Decode decoding = new Decode(keyValue1, decryptText);
-                System.out.println(decoding);
+                System.out.println(decoding.decrypt());
             }
         } catch (NumberFormatException e) {
             e.printStackTrace();

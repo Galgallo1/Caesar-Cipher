@@ -55,9 +55,10 @@ public class Encoding<cypher> {
             }else {
                 cypher.append(ch);
             }
-         }
-        return cypher.toString();
 
+         }
+
+         return cypher.toString();
 
      }
 }
